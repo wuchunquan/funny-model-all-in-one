@@ -1,5 +1,6 @@
 import argparse
 import os
+from pathlib import Path
 
 import librosa
 import numpy as np
@@ -7,10 +8,10 @@ import soundfile as sf
 import torch
 from tqdm import tqdm
 
-from lib import dataset
-from lib import nets
-from lib import spec_utils
-from lib import utils
+from .lib import dataset
+from .lib import nets
+from .lib import spec_utils
+from .lib import utils
 
 
 class Separator(object):
@@ -108,7 +109,8 @@ class Separator(object):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--gpu', '-g', type=int, default=-1)
-    p.add_argument('--pretrained_model', '-P', type=str, default='models/baseline.pth')
+    p.add_argument('--pretrained_model', '-P', type=str,
+                   default=os.path.join(Path(__file__).parent, 'models/baseline.pth'))
     p.add_argument('--input', '-i', required=True)
     p.add_argument('--sr', '-r', type=int, default=44100)
     p.add_argument('--n_fft', '-f', type=int, default=2048)
