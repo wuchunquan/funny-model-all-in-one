@@ -21,3 +21,8 @@ rembg[gpu,cli]
 librosa
 soundfile
 resampy
+
+#GFPGAN
+basicsr
+facexlib
+realesrgan

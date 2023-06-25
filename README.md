@@ -1,7 +1,7 @@
 # ToDoList
 - project to make one env to use different deeplearn models
 
-## 用GPU的
+## use gpu
 ```shell
 # 先安装好cuda这些
 # nvcc --version 看版本
@@ -22,6 +22,16 @@ rembg i -m isnet-general-use  .\FastSAM\images\dogs.jpg .\3.png
 - [x] [vocal-remover](https://github.com/tsurumeso/vocal-remover)
 ```shell
 python .\vocalRemoverInference.py --input path\to\music --gpu 0
+```
+- [x] [GFPGAN](https://github.com/TencentARC/GFPGAN)
+```shell
+cd GFPGAN
+python inference_gfpgan.py -i inputs/whole_imgs -o results -v 1.3 -s 2
+```
+- [x] [CodeFormer](https://github.com/sczhou/CodeFormer)
+```shell
+cd CodeFormer
+python inference_codeformer.py -w 0.7 --input_path [file or dir path]
 ```
 
 
