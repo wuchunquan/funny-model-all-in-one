@@ -1,0 +1,5 @@
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+/models/FastSAM-x.pt
