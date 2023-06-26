@@ -10,9 +10,9 @@ import torch
 import torch.nn as nn
 import torch.utils.data
 
-from .lib import dataset
-from .lib import nets
-from .lib import spec_utils
+from lib import dataset
+from lib import nets
+from lib import spec_utils
 
 
 def setup_logger(name, logfile='LOGFILENAME.log'):

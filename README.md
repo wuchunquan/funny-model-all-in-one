@@ -13,7 +13,8 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 - [x] [FastSAM](https://github.com/CASIA-IVA-Lab/FastSAM)
 
 ```shell
-python .\FastSAM\Inference.py --model_path .\FastSAM\models\FastSAM-x.pt --img_path .\FastSAM\images\dogs.jpg  --matting True --text_prompt "the yellow dog" --output ./
+cd FastSAM
+python Inference.py --model_path .\models\FastSAM-x.pt --img_path .\images\dogs.jpg  --matting True --text_prompt "the yellow dog" --output ./
 ```
 - [x] [rembg](https://github.com/danielgatis/rembg)
 ```shell
@@ -21,7 +22,8 @@ rembg i -m isnet-general-use  .\FastSAM\images\dogs.jpg .\3.png
 ```
 - [x] [vocal-remover](https://github.com/tsurumeso/vocal-remover)
 ```shell
-python .\vocalRemoverInference.py --input path\to\music --gpu 0
+cd vocal-remover
+python inference.py --input path\to\music --gpu 0
 ```
 - [x] [GFPGAN](https://github.com/TencentARC/GFPGAN)
 ```shell
