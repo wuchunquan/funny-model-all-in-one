@@ -9,7 +9,7 @@
     <option name="namespacePackageFolders">
       <list>
         <option value="$MODULE_DIR$/FastSAM" />
-        <option value="$MODULE_DIR$/vocalRemover" />
+        <option value="$MODULE_DIR$/vocal-remover" />
       </list>
     </option>
   </component>
